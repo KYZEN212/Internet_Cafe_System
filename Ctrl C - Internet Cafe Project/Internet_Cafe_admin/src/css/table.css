@@ -1,0 +1,69 @@
+/* ===== MAIN TABLE ===== */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+/* ===== BLACK HEADER ===== */
+.table-view .column-header-background {
+    -fx-background-color: black;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 0;
+}
+
+/* ===== TABLE ROWS & CELLS ===== */
+.table-view .table-row-cell {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #e0e0e0;
+}
+
+.table-view .table-row-cell:filled {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: black;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 10px;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+/* Right-align specific columns */
+.table-column.right-align .table-cell {
+    -fx-alignment: CENTER_RIGHT;
+}
+
+/* Remove selection highlight */
+.table-row-cell:filled:selected {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+/* Hide scrollbar */
+.table-view .scroll-bar:vertical {
+    -fx-opacity: 0;
+}
+
+/* Remove focus ring */
+.table-view:focused {
+    -fx-background-insets: 0;
+}
